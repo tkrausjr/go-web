@@ -59,7 +59,7 @@ fmt: ; $(info $(M) running gofmt…) @ ## Run gofmt on all source files
 
 .PHONY: lint
 lint: ; $(info $(M) running lint…) @ ## Run gofmt on all source files
-	./bin/golangci-lint run ./...
+	golangci-lint run ./...
 
 .PHONY: ci
 ci: all test; $(info $(M) running all the tests and code checks…) @ ## Run all the tests and code checks
